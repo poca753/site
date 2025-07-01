@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+    <style>
+        body{
+        background-color: pink;
+        color: hotpink;
+        }
+        a{
+            color: deeppink;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: violet;
+        }
+        a:hover{
+            color: violet;
+            text-decoration: underline;
+        }
+        a:active{
+            color: fuchsia;
+        }
+        .especial{
+            background-color: rgb(255, 141, 198);
+        }
+        .especial::before{
+             content: '➫';
+        }
+       .especial::after{
+           content: '⇐';
+       }
+    </style>
+</head>
+<body>
+    <h1>links personalizados</h1>
+    <ul>
+        <li><a href="https://github.com/" target="_blank"> Repositorio do github</a></li>
+
+        <li><a href="https://www.reddit.com/?rdt=52330" target="_blank" class="especial"> Site do Reddit</a></li>
+
+        <li><a href="https://www.dafont.com/pt/" target="_blank" class="especial"> Site DaFont</a></li>
+    </ul>
+</body>
+</html>
